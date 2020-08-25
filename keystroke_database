@@ -1,7 +1,7 @@
 fewfw
 
 ```
-CREATE KEYSPACE keystroke WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};
+ewfw
 ```
 
 
