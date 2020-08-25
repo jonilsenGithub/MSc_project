@@ -7,12 +7,12 @@ import ml_model
 
 app = Flask(__name__)
 
-ml_model.knn()
+ml_model.svc()
 
 @app.route('/', methods=['GET'])
 def authenticate():
 
-	model = pickle.load(open('k_nearest_neighbor.sav','rb'))
+	model = pickle.load(open('svc.sav','rb'))
 	scaler = pickle.load(open('ml_scaler.sav','rb'))
 
 	sample = np.array(json.loads(request.args['data'])).reshape(1,-1)
