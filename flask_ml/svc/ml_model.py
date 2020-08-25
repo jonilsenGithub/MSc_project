@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle
 
-def knn():
+def svc():
 
 	#importing dataset
 	df = pd.read_csv('kd.csv')
@@ -33,6 +33,6 @@ def knn():
 	knn.fit(X_train,y_train)
 
 	#saving model
-	pickle.dump(knn,open('k_nearest_neighbor.sav','wb'))
+	pickle.dump(svc,open('svc.sav','wb'))
 
 	return ''
