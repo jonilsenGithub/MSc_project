@@ -15,7 +15,7 @@ cqlsh> CREATE TABLE keystroke.measurements(subject varchar, sessionIndex int, re
 ````
 
 ### PLEASE NOTE
-In an active environment where the database would constantly receive new user samples, the code below belong to a separate script created to handle .csv export whenever the database was updated with new user samples. However, as we working with a static dataset this is done manually once from command line.
+In an active environment where the database would constantly receive new user samples, the code below belong to a separate script created to handle .csv export whenever the database was updated with new user samples. However, as we are working with a static dataset this is done manually once from command line.
 
 ##### Exporting database to .csv file in containers home folder:
 
