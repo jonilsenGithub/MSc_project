@@ -6,22 +6,22 @@
 Contains 3 models attempted. However, due to various reasons specified in dissertation paper, paragraph VIII, they could not be deployed. These have not been commented as they are not a part of the complete project, but only included to show the extent to which they have required time consumption.
 
 ### models:
-#### euclidean_distance.ipynb:
-Displays the creation of the euclidean distance model deployed in flask_euc.py
+  #### euclidean_distance.ipynb:
+  Displays the creation of the euclidean distance model deployed in flask_euc.py
 
-#### machine_learning.ipynb:
-Displays the creation of both KNN and SVC deployed in flask_ml.py.
+  #### machine_learning.ipynb:
+  Displays the creation of both KNN and SVC deployed in flask_ml.py.
 
-Structure:
-- Dataset was processed
+  Structure:
+  - Dataset was processed
 
-- KNN was applied
-- GridSearch was performed to determine the best parameter combination for KNN
-- Cross-validation was used to determine what average accuracy score is using several different combinations of trainingset and testset
+  - KNN was applied
+  - GridSearch was performed to determine the best parameter combination for KNN
+  - Cross-validation was used to determine what average accuracy score is using several different combinations of trainingset and testset
 
-- SVC was applied
-- GridSearch was performed to determine the best parameter combination for SVC
-- Cross-validation was also to determine what average accuracy score is using several different combinations of trainingset and testset
+  - SVC was applied
+  - GridSearch was performed to determine the best parameter combination for SVC
+  - Cross-validation was also to determine what average accuracy score is using several different combinations of trainingset and testset
 
 ### flask_euc:
 Contains the files needed to create a Docker image, which can be instanciated in a Docker container
