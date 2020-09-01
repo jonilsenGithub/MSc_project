@@ -6,11 +6,11 @@
 Contains 3 models attempted. However, due to various reasons specified in dissertation paper, paragraph VIII, they could not be deployed. These have not been commented as they are not a part of the complete project, but only included to show the extent to which they have required time consumption.
 
 ### models:
-  #### euclidean_distance.ipynb:
-  Displays the creation of the euclidean distance model deployed in flask_euc.py
+#### euclidean_distance.ipynb:
+Displays the creation of the euclidean distance model deployed in flask_euc.py
 
-  #### machine_learning.ipynb:
-  Displays the creation of both KNN and SVC deployed in flask_ml.py.
+#### machine_learning.ipynb:
+Displays the creation of both KNN and SVC deployed in flask_ml.py.
 
   Structure:
   - Dataset was processed
