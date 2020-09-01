@@ -3,7 +3,7 @@
 ## Folders and files explained
 
 ### unused_attempts:
-Contains 3 models attempted. However, due to various reasons specified in dissertation paper, paragraph VIII, they could not be deployed.
+Contains 3 models attempted. However, due to various reasons specified in dissertation paper, paragraph VIII, they could not be deployed. These have not been commented as they are not a part of the complete project, but only included to show the extent to which they have required time consumption.
 
 ### models:
 #### euclidean_distance.ipynb:
