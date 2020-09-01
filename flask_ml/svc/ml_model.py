@@ -27,10 +27,10 @@ def svc():
 	pickle.dump(scaler,open('ml_scaler.sav','wb')) 
 
 	#fitting
-	from sklearn.neighbors import KNeighborsClassifier
-	knn = KNeighborsClassifier(n_neighbors=5,p=1,algorithm='auto',weights='distance')
+	from sklearn.svm import SVC
+	svc = SVC(C=50,gamma=0.1, kernel='rbf')
 
-	knn.fit(X_train,y_train)
+	svc.fit(X_train,y_train)
 
 	#saving model
 	pickle.dump(svc,open('svc.sav','wb'))
