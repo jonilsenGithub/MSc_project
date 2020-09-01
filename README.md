@@ -47,4 +47,3 @@ Sends requests to the running application containers and prints the response. Th
 - All images can be build using Docker, if requirements in folder's Dockerfile are met
 - Sending requests to the containers will require following instructions in the database_interaction.md file using keystroke dynamics dataset from: https://www.kaggle.com/carnegiecylab/keystroke-dynamics-benchmark-data-set
 - After exporting the measurements table you will also need to further export a copy to your computer, from which you will be running requirements.py
-- Additionally the 
