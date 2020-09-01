@@ -1,3 +1,4 @@
+#importing necessary Python packages, modules and libraries
 from flask import Flask, jsonify, request
 import numpy as np
 import pandas as pd
