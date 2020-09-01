@@ -3,6 +3,7 @@ import pandas as pd
 import pickle
 
 #this function, when called, imports the latest dataset sent from the Cassandra container to the flask_ml container folder
+# and uses to produce a machine learning algorithm saved in the container folder ready to be applied by ml_app.py
 def svc():
 
 	#importing, cleaning and formatting dataset
