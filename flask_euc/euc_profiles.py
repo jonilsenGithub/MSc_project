@@ -33,14 +33,14 @@ def profiles():
 	# saving scaler to flask_euc container folder
 	pickle.dump(scaler,open('euc_scaler.sav','wb')) 
 
-	#grouping samples by username (subject), extracting feature means and re-indexing dataset
-	df = training_set[['subject','h_period', 'dd_period_t', 'ud_period_t', 'h_t', 'dd_t_i','ud_t_i', 'h_i', 
+	#grouping samples by username (subject), extracting feature means, re-indexing dataset and saving it to the variable profiles_df
+	profiles_df = training_set[['subject','h_period', 'dd_period_t', 'ud_period_t', 'h_t', 'dd_t_i','ud_t_i', 'h_i', 
 	'dd_i_e', 'ud_i_e', 'h_e', 'dd_e_five', 'ud_e_five','h_five', 'dd_five_shift_r', 'ud_five_shift_r', 
 	'h_shift_r','dd_shift_r_o', 'ud_shift_r_o', 'h_o', 'dd_o_a', 'ud_o_a', 'h_a','dd_a_n', 'ud_a_n', 'h_n', 
 	'dd_n_l', 'ud_n_l', 'h_l', 'dd_l_return','ud_l_return', 'h_return']].groupby('subject').mean().reset_index()
 
 	#saving profiles to flask_euc container folder
-	df.to_csv('profiles.csv')
+	profiles_df.to_csv('profiles.csv')
 
 	#returning nothing because what we want is for the scaler and model to be saved in the container folder
 	return ''
